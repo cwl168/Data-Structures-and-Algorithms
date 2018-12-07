@@ -1,43 +1,46 @@
- // main1-1.cpp ¼ìÑé»ù±¾²Ù×÷bo1-1.cppµÄÖ÷º¯Êı
+ // main1-1.cpp æ£€éªŒåŸºæœ¬æ“ä½œbo1-1.cppçš„ä¸»å‡½æ•°
  #include"c1.h" 
- // ÒÔÏÂÁ½ĞĞ¿É¸ù¾İĞèÒªÑ¡ÆäÒ»(ÇÒÖ»ÄÜÑ¡ÆäÒ»)£¬¶øÎŞĞë¸Ä±ä»ù±¾²Ù×÷bo1-1.cpp
+ // ä»¥ä¸‹ä¸¤è¡Œå¯æ ¹æ®éœ€è¦é€‰å…¶ä¸€(ä¸”åªèƒ½é€‰å…¶ä¸€)ï¼Œè€Œæ— é¡»æ”¹å˜åŸºæœ¬æ“ä½œbo1-1.cpp
  typedef int ElemType; 
- //typedef double ElemType; // ¶¨Òå³éÏóÊı¾İÀàĞÍElemTypeÔÚ±¾³ÌĞòÖĞÎªË«¾«¶ÈĞÍ¡£µÚ5ĞĞ
+ //typedef double ElemType; // å®šä¹‰æŠ½è±¡æ•°æ®ç±»å‹ElemTypeåœ¨æœ¬ç¨‹åºä¸­ä¸ºåŒç²¾åº¦å‹ã€‚ç¬¬5è¡Œ
  #include"c1-1.h" 
  #include"bo1-1.cpp" 
  #include"func1-1.cpp" 
- void main()
+ int main()
  {
    Triplet T;
    ElemType m;
    Status i;
    i=InitTriplet(T,5,7,9); 
- //i=InitTriplet(T,5.0,7.1,9.3); // µ±ElemTypeÎªË«¾«¶ÈĞÍÊ±£¬¿ÉÈ¡´úÉÏ¾ä¡£µÚ15ĞĞ
-   printf("µ÷ÓÃ³õÊ¼»¯º¯Êıºó£¬i=%d(1:³É¹¦)¡£TµÄ3¸öÖµÎª",i);
+ //i=InitTriplet(T,5.0,7.1,9.3); // å½“ElemTypeä¸ºåŒç²¾åº¦å‹æ—¶ï¼Œå¯å–ä»£ä¸Šå¥ã€‚ç¬¬15è¡Œ
+   printf("è°ƒç”¨åˆå§‹åŒ–å‡½æ•°åï¼Œi=%d(1:æˆåŠŸ)ã€‚Tçš„3ä¸ªå€¼ä¸º",i);
    PrintT(T); 
    i=Get(T,2,m); 
    if(i==OK) 
-   { printf("TµÄµÚ2¸öÖµÎª");
+   { printf("Tçš„ç¬¬2ä¸ªå€¼ä¸º");
      PrintE(m); 
    }
    i=Put(T,2,6); 
    if(i==OK) 
-   { printf("½«TµÄµÚ2¸öÖµ¸ÄÎª6ºó£¬TµÄ3¸öÖµÎª");
+   { printf("å°†Tçš„ç¬¬2ä¸ªå€¼æ”¹ä¸º6åï¼ŒTçš„3ä¸ªå€¼ä¸º");
      PrintT(T); 
    }
    i=IsAscending(T); 
-   printf("µ÷ÓÃ²âÊÔÉıĞòµÄº¯Êıºó£¬i=%d(0:·ñ 1:ÊÇ)\n",i);
+   printf("è°ƒç”¨æµ‹è¯•å‡åºçš„å‡½æ•°åï¼Œi=%d(0:å¦ 1:æ˜¯)\n",i);
    i=IsDescending(T); 
-   printf("µ÷ÓÃ²âÊÔ½µĞòµÄº¯Êıºó£¬i=%d(0:·ñ 1:ÊÇ)\n",i);
+   printf("è°ƒç”¨æµ‹è¯•é™åºçš„å‡½æ•°åï¼Œi=%d(0:å¦ 1:æ˜¯)\n",i);
    if((i=Max(T,m))==OK) 
-   { printf("TÖĞµÄ×î´óÖµÎª");
+   { printf("Tä¸­çš„æœ€å¤§å€¼ä¸º");
      PrintE(m); 
    }
    if((i=Min(T,m))==OK)
-   { printf("TÖĞµÄ×îĞ¡ÖµÎª");
+   { printf("Tä¸­çš„æœ€å°å€¼ä¸º");
      PrintE(m); 
    }
+   //In Ubuntu 8.10 and later versionsï¼Œgcc -g -Wformat=0 main1-1.cpp -o main1-1.out
    DestroyTriplet(T); 
-   printf("Ïú»ÙTºó£¬T=%u\n",T);
+   printf("é”€æ¯Tåï¼ŒT=%u\n",T);
+
+   return 0;
  }
 

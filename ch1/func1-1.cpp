@@ -1,11 +1,11 @@
- // func1-1.cpp Êä³öº¯Êı
+ // func1-1.cpp è¾“å‡ºå‡½æ•°
  void PrintE(ElemType e) 
  { printf("%d\n",e); 
- //printf("%f\n",e); // ¶¨ÒåElemTypeÎªË«¾«¶ÈĞÍÑ¡´Ë¾ä¡£µÚ4ĞĞ
+ //printf("%f\n",e); // å®šä¹‰ElemTypeä¸ºåŒç²¾åº¦å‹é€‰æ­¤å¥ã€‚ç¬¬4è¡Œ
  }
 
  void PrintT(Triplet T) 
- { printf("%d£¬%d£¬%d\n",T[0],T[1],T[2]); 
- //printf("%f£¬%f£¬%f\n",T[0],T[1],T[2]); // ¶¨ÒåElemTypeÎªË«¾«¶ÈĞÍÑ¡´Ë¾ä¡£µÚ8ĞĞ
+ { printf("%dï¼Œ%dï¼Œ%d\n",T[0],T[1],T[2]); 
+ //printf("%fï¼Œ%fï¼Œ%f\n",T[0],T[1],T[2]); // å®šä¹‰ElemTypeä¸ºåŒç²¾åº¦å‹é€‰æ­¤å¥ã€‚ç¬¬8è¡Œ
  }
 

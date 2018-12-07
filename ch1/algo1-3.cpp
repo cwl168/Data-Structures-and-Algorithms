@@ -1,4 +1,4 @@
- // algo1-3.cpp ¼ÆËã1-1/x+1/(x*x)¡­µÄ¸ü¿ì½İµÄËã·¨
+ // algo1-3.cpp è®¡ç®—1-1/x+1/(x*x)â€¦çš„æ›´å¿«æ·çš„ç®—æ³•
  #include"c1.h"
  void main()
  {
@@ -6,7 +6,7 @@
    long t;
    double x,sum1=1,sum=1;
    int i,n;
-   printf("ÇëÊäÈëx n£º");
+   printf("è¯·è¾“å…¥x nï¼š");
    scanf("%lf%d",&x,&n);
    ftime(&t1); 
    for(i=1;i<=n;i++)
@@ -15,6 +15,6 @@
    }
    ftime(&t2); 
    t=(t2.time-t1.time)*1000+(t2.millitm-t1.millitm); 
-   printf("sum=%lf£¬ÓÃÊ±%ldºÁÃë\n",sum,t);
+   printf("sum=%lfï¼Œç”¨æ—¶%ldæ¯«ç§’\n",sum,t);
  }
 

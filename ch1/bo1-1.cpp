@@ -1,4 +1,4 @@
- // bo1-1.cpp ³éÏóÊı¾İÀàĞÍTripletºÍElemType(ÓÉc1-1.h¶¨Òå)µÄ»ù±¾²Ù×÷(8¸ö)
+ // bo1-1.cpp æŠ½è±¡æ•°æ®ç±»å‹Tripletå’ŒElemType(ç”±c1-1.hå®šä¹‰)çš„åŸºæœ¬æ“ä½œ(8ä¸ª)
  Status InitTriplet(Triplet &T,ElemType v1,ElemType v2,ElemType v3)
  { 
    T=(ElemType*)malloc(3*sizeof(ElemType)); 

@@ -15,7 +15,7 @@
  #define OK 1
  #define ERROR 0
  // #define INFEASIBLE -1 没使用
- // #define OVERFLOW -2 因为在math.h中已定义OVERFLOW的值为3，故去掉此行
+ #define OVERFLOW -2 
  typedef int Status; 
  typedef int Boolean; 
 

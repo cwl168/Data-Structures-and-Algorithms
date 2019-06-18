@@ -38,8 +38,10 @@
      PrintE(m); 
    }
    //In Ubuntu 8.10 and later versions，gcc -g -Wformat=0 main1-1.cpp -o main1-1.out
+   //printf("销毁T后，T=%u\n",T);
    DestroyTriplet(T); 
-   printf("销毁T后，T=%u\n",T);
+   if(T == NULL)
+   printf("销毁T\n");
 
    return 0;
  }
